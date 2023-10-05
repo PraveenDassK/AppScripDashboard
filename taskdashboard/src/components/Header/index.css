@@ -1,0 +1,126 @@
+.header_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 0%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8e8e8;
+
+}
+.header_logo {
+  border-right: 1px solid #e8e8e8;
+  padding: 1% 0%;
+  padding-left: 5%;
+  width: 15%;
+}
+.header_routes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  width: 60%;
+  padding-left: 2%;
+}
+.header_routes-list {
+  color: #7e7e7e;
+  font-weight: 400;
+  line-height: 20.16px;
+  font-size: 16px;
+  padding: 5% 0%;
+  cursor: pointer;
+}
+.header_routes-activelist {
+  color: #04095a;
+  font-weight: 500;
+  border-bottom: 3px solid #04095a;
+  font-size: 16px;
+  line-height: 20.16px;
+  padding: 5% 0%;
+  cursor: pointer;
+
+}
+.header_routes-list:hover {
+  color: #04095a;
+  font-weight: 500;
+}
+.header_account {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  align-items: center;
+  gap: 20px;
+}
+.header_check-button {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #04095a;
+  color: #04095a;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 3% 5%;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+.header_account-icon {
+  padding: 15px;
+  border-radius: 50%;
+  border: 1px solid #00e9d1;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: #e5fdfb;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+.header_account-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+
+@media (min-width: 1100px) and (max-width: 1400px) {
+  .header_routes-list {
+    font-size: 14px;
+  }
+  .header_routes-activelist {
+    font-size: 14px;
+  }
+  .header_check-button {
+    font-size: 12px;
+    padding: 3% 5%;
+    gap: 3px;
+  }
+
+  .header_routes {
+    gap: 20px;
+  }
+  .header_account {
+    gap: 10px;
+    width: 30%;
+  }
+  .header_account-icon {
+    padding: 10px;
+  }
+}
+
+@media (min-width:1900px) and (max-width:3000px){
+    .header_routes-list {
+        font-size: 24px;
+      }
+      .header_routes-activelist {
+        font-size: 24px;
+      }
+      .header_routes {
+        gap: 30px;
+      }
+}
