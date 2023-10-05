@@ -21,18 +21,24 @@ const SideBar = () => {
     },
   ];
   return (
-    <div className="sideBar_container">
-      <div className="sideBar_title">MedLife</div>
+    <div className='sideBar_container'>
+      <div className='sideBar_title'>MedLife</div>
       <div style={{ margin: "15% 0%" }}>
-        <button className="sideBar_appoinment">
-          Add Clinical <img src={DownArrow} alt="arrowicon" />
+        <button className='sideBar_appoinment'>
+          Add Clinical <img src={DownArrow} alt='arrowicon' />
         </button>
       </div>
       <div>
         {sideBarData?.map((eachData, i) => {
           return (
-        <div className={`${location?.pathname ===eachData?.pathName?"sideBar_selector-active":"sideBar_selector"}`}>
-              <img alt="selectedimage" src={eachData?.imageUrl} />
+            <div
+              className={`${
+                location?.pathname === eachData?.pathName
+                  ? "sideBar_selector-active"
+                  : "sideBar_selector"
+              }`}
+              key={i}>
+              <img alt='selectedimage' src={eachData?.imageUrl} />
               <div>{eachData?.title}</div>
             </div>
           );

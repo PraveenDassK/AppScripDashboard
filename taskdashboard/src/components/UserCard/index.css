@@ -1,0 +1,131 @@
+.card_container {
+  width: 100%;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #e9ecf1;
+  padding: 2% 0%;
+  margin:1% 0%;
+}
+.card_centerSide {
+  width: 33%;
+}
+.card_leftSide {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  width: 35%;
+
+}
+.card_rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  width: 33%;
+}
+.card_button {
+  background-color: #04095a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 3%;
+  width: 50%;
+}
+.card_center-value {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+  padding: 2% 3%;
+}
+.card_username {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30.24px;
+}
+.card_appoinmentId {
+  color: #7e7e7e;
+  font-weight: 500;
+  font-size: 16px;
+}
+.card_inTake {
+  color: #377bffe5;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 7%;
+}
+.card_taskId {
+  font-size: 16px;
+  color: #7e7e7e;
+  font-weight: 400;
+  line-height: 25.2px;
+  width: 40%;
+}
+.card_taskIdDetails {
+  text-align: left;
+  width: 70%;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+}
+.card_status {
+  color: #7e7e7e;
+  font-size: 16px;
+  font-weight: 400;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.card_status-live {
+  color: #f44336;
+  font-weight: 500;
+  font-size: 20px;
+}
+.card_status-green{
+    color: #00B071;
+  font-weight: 500;
+  font-size: 20px;
+}
+.view_button{
+  margin-top:15%;
+}
+@media (min-width: 1100px) and (max-width: 1400px) {
+  .card_inTake {
+    font-size: 12px;
+  }
+  .card_appoinmentId {
+    font-size: 12px;
+  }
+  .card_username {
+    font-size: 20px;
+  }
+  .card_taskId {
+    font-size: 13px;
+  }
+  .card_taskIdDetails {
+    font-size: 13px;
+  }
+  .card_button {
+    font-size: 12px;
+  }
+  .card_rightSide {
+    width: 30%;
+  }
+  .card_leftSide {
+    width: 40%;
+  }
+}
